@@ -21,7 +21,7 @@ public class InputReader : MonoBehaviour
             Clicked?.Invoke();
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown(Jump))
         {
             JumpClicked?.Invoke();
         }

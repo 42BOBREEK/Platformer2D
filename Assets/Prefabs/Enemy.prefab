@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293611095914489082}
+  - component: {fileID: 8498453171632941914}
   m_Layer: 6
   m_Name: GroundChecker
   m_TagString: Untagged
@@ -31,6 +32,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1400189373816839306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8498453171632941914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715775511806948600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70381f1f3176ae9d1aebdb2bc9f3b0d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &4180956753974753012
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,6 +61,8 @@ GameObject:
   - component: {fileID: 3579141091421722412}
   - component: {fileID: 1393231467928394079}
   - component: {fileID: 237908145276306432}
+  - component: {fileID: 6030520245885603036}
+  - component: {fileID: 8475334161181083178}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -198,16 +216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bcc885a962eb6b5a14117d790e786d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 2
   _targetA: {fileID: 0}
+  _player: {fileID: 0}
   _targetB: {fileID: 0}
-  _jumpCooldown: 1
   _jumpingForce: 1
-  _isJumping: 1
-  _groundChecker: {fileID: 293611095914489082}
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  _groundChecker: {fileID: 8498453171632941914}
 --- !u!50 &237908145276306432
 Rigidbody2D:
   serializedVersion: 4
@@ -235,3 +249,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6030520245885603036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180956753974753012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fcc23ddc69b46ca9ecc17d47d139c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8475334161181083178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180956753974753012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccc77f334ffbfb4cb76bbaa1029afcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _maximumDistance: 5
+  _enemyMovement: {fileID: 1393231467928394079}
