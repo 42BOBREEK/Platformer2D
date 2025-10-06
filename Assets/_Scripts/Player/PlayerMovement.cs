@@ -5,8 +5,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpingForce;
     [SerializeField] private Rigidbody2D _rigidbody;
-    [SerializeField] private GroundChecker _groundChecker;
-    [SerializeField] private InputReader _input;
 
     private PlayerAnimator _animator;
     private Rotater _rotater;
@@ -17,29 +15,14 @@ public class PlayerMovement : MonoBehaviour
         _rotater = GetComponent<Rotater>();
     }
 
-    private void OnEnable()
+    public void Move(float horizontalInput)
     {
-        _input.JumpClicked += Jump;
+        _rigidbody.velocity = new Vector2(horizontalInput * _speed, _rigidbody.velocity.y);
     }
 
-    private void OnDisable()
+    public void Jump(GroundChecker groundChecker)
     {
-        _input.JumpClicked -= Jump;
-    }
-
-    private void FixedUpdate()
-    {
-        _rigidbody.velocity = new Vector2(_input.HorizontalInput * _speed, _rigidbody.velocity.y);
-
-        _rotater.FlipSprite(_input.HorizontalInput);
-
-        _animator.SetRunningBool(_input.HorizontalInput != 0f && _groundChecker.IsGrounded());
-        _animator.SetFallingBool(!_groundChecker.IsGrounded());
-    }
-
-    private void Jump()
-    {
-        if(_groundChecker.IsGrounded())
+        if(groundChecker.IsGrounded())
         {
             _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _jumpingForce);
 

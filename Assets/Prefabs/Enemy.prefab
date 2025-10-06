@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 237908145276306432}
   - component: {fileID: 6030520245885603036}
   - component: {fileID: 8475334161181083178}
+  - component: {fileID: 5647097970458670937}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -217,9 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 2
-  _targetA: {fileID: 0}
-  _player: {fileID: 0}
-  _targetB: {fileID: 0}
+  _targets: []
+  _targetIndex: 0
   _jumpingForce: 1
   _groundChecker: {fileID: 8498453171632941914}
 --- !u!50 &237908145276306432
@@ -273,6 +273,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccc77f334ffbfb4cb76bbaa1029afcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _maximumDistance: 5
   _enemyMovement: {fileID: 1393231467928394079}
+--- !u!114 &5647097970458670937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180956753974753012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeac1468dbb2295db8c831e5a64e0c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dealingDamage: 25

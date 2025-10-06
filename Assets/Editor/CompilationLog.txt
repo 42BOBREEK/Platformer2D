@@ -1509,3 +1509,274 @@
 [13:38:30.797] === Diagnostics initialized ===
 [13:38:30.960] 🔓 After assembly reload
 [13:38:30.974] 🔓 After assembly reload
+[15:15:45.638] 🟡 Compilation started
+[15:15:47.912] 🟢 Compilation finished
+[15:15:48.042] 🔒 Before assembly reload
+[15:15:49.394] === Diagnostics initialized ===
+[15:15:50.106] 🔓 After assembly reload
+[15:15:50.361] 🔒 Before assembly reload
+[15:15:50.362] 🔒 Before assembly reload
+[15:15:51.174] === Diagnostics initialized ===
+[15:15:51.349] 🔓 After assembly reload
+[15:15:51.351] 🔓 After assembly reload
+[15:16:27.151] 🟡 Compilation started
+[15:16:28.405] 🟢 Compilation finished
+[15:16:28.492] 🔒 Before assembly reload
+[15:16:29.814] === Diagnostics initialized ===
+[15:16:30.521] 🔓 After assembly reload
+[15:16:30.770] 🔒 Before assembly reload
+[15:16:30.787] 🔒 Before assembly reload
+[15:16:31.579] === Diagnostics initialized ===
+[15:16:31.604] === Diagnostics initialized ===
+[15:16:31.752] 🔓 After assembly reload
+[15:16:31.777] 🔓 After assembly reload
+[15:16:57.288] 🟡 Compilation started
+[15:16:57.560] 🟢 Compilation finished
+[15:16:57.644] 🔒 Before assembly reload
+[15:16:58.962] === Diagnostics initialized ===
+[15:16:59.676] 🔓 After assembly reload
+[15:16:59.928] 🔒 Before assembly reload
+[15:16:59.936] 🔒 Before assembly reload
+[15:17:00.727] === Diagnostics initialized ===
+[15:17:00.732] === Diagnostics initialized ===
+[15:17:00.896] 🔓 After assembly reload
+[15:17:00.903] 🔓 After assembly reload
+[15:24:00.287] 🟡 Compilation started
+[15:24:00.571] 🟢 Compilation finished
+[15:24:00.620] 🔒 Before assembly reload
+[15:24:01.948] === Diagnostics initialized ===
+[15:24:02.658] 🔓 After assembly reload
+[15:24:02.907] 🔒 Before assembly reload
+[15:24:02.908] 🔒 Before assembly reload
+[15:24:03.702] === Diagnostics initialized ===
+[15:24:03.722] === Diagnostics initialized ===
+[15:24:03.880] 🔓 After assembly reload
+[15:24:03.902] 🔓 After assembly reload
+[15:24:04.971] 🔒 Before assembly reload
+[15:24:06.007] === Diagnostics initialized ===
+[15:24:06.807] 🔓 After assembly reload
+[15:24:07.059] 🔒 Before assembly reload
+[15:24:07.061] 🔒 Before assembly reload
+[15:24:07.863] === Diagnostics initialized ===
+[15:24:07.872] === Diagnostics initialized ===
+[15:24:08.044] 🔓 After assembly reload
+[15:24:08.052] 🔓 After assembly reload
+[15:30:14.506] 🔒 Before assembly reload
+[15:30:15.689] === Diagnostics initialized ===
+[15:30:16.516] 🔓 After assembly reload
+[15:30:16.759] 🔒 Before assembly reload
+[15:30:16.760] 🔒 Before assembly reload
+[15:30:17.561] === Diagnostics initialized ===
+[15:30:17.570] === Diagnostics initialized ===
+[15:30:17.735] 🔓 After assembly reload
+[15:30:17.744] 🔓 After assembly reload
+[15:30:59.186] 🟡 Compilation started
+[15:30:59.457] 🟢 Compilation finished
+[15:30:59.488] 🔒 Before assembly reload
+[15:31:00.861] === Diagnostics initialized ===
+[15:31:01.616] 🔓 After assembly reload
+[15:31:01.863] 🔒 Before assembly reload
+[15:31:01.867] 🔒 Before assembly reload
+[15:31:02.666] === Diagnostics initialized ===
+[15:31:02.668] === Diagnostics initialized ===
+[15:31:02.845] 🔓 After assembly reload
+[15:31:02.845] 🔓 After assembly reload
+[15:31:03.245] 🔒 Before assembly reload
+[15:31:04.350] === Diagnostics initialized ===
+[15:31:05.175] 🔓 After assembly reload
+[15:31:05.435] 🔒 Before assembly reload
+[15:31:05.435] 🔒 Before assembly reload
+[15:31:06.227] === Diagnostics initialized ===
+[15:31:06.248] === Diagnostics initialized ===
+[15:31:06.403] 🔓 After assembly reload
+[15:31:06.430] 🔓 After assembly reload
+[21:34:00.557] === Diagnostics initialized ===
+[21:34:02.168] 🔓 After assembly reload
+[21:34:07.433] === Diagnostics initialized ===
+[21:34:07.636] 🔓 After assembly reload
+[21:34:09.969] === Diagnostics initialized ===
+[21:34:10.174] 🔓 After assembly reload
+[21:45:27.675] 🟡 Compilation started
+[21:45:28.944] 🟢 Compilation finished
+[21:45:28.996] 🔒 Before assembly reload
+[21:45:30.407] === Diagnostics initialized ===
+[21:45:31.068] 🔓 After assembly reload
+[21:45:31.340] 🔒 Before assembly reload
+[21:45:31.342] 🔒 Before assembly reload
+[21:45:32.145] === Diagnostics initialized ===
+[21:45:32.315] 🔓 After assembly reload
+[21:45:32.316] 🔓 After assembly reload
+[21:45:32.562] 🔒 Before assembly reload
+[21:45:33.565] === Diagnostics initialized ===
+[21:45:34.330] 🔓 After assembly reload
+[21:45:34.575] 🔒 Before assembly reload
+[21:45:34.581] 🔒 Before assembly reload
+[21:45:35.375] === Diagnostics initialized ===
+[21:45:35.385] === Diagnostics initialized ===
+[21:45:35.546] 🔓 After assembly reload
+[21:45:35.565] 🔓 After assembly reload
+[21:46:01.174] 🔒 Before assembly reload
+[21:46:02.271] === Diagnostics initialized ===
+[21:46:03.024] 🔓 After assembly reload
+[21:46:03.267] 🔒 Before assembly reload
+[21:46:03.270] 🔒 Before assembly reload
+[21:46:04.078] === Diagnostics initialized ===
+[21:46:04.094] === Diagnostics initialized ===
+[21:46:04.250] 🔓 After assembly reload
+[21:46:04.262] 🔓 After assembly reload
+[21:47:41.909] 🟡 Compilation started
+[21:47:42.160] 🟢 Compilation finished
+[21:47:42.207] 🔒 Before assembly reload
+[21:47:43.571] === Diagnostics initialized ===
+[21:47:44.220] 🔓 After assembly reload
+[21:47:44.469] 🔒 Before assembly reload
+[21:47:44.480] 🔒 Before assembly reload
+[21:47:44.919] 🔒 Before assembly reload
+[21:47:45.277] === Diagnostics initialized ===
+[21:47:45.299] === Diagnostics initialized ===
+[21:47:45.448] 🔓 After assembly reload
+[21:47:45.476] 🔓 After assembly reload
+[21:47:45.962] === Diagnostics initialized ===
+[21:47:46.713] 🔓 After assembly reload
+[21:47:46.957] 🔒 Before assembly reload
+[21:47:46.959] 🔒 Before assembly reload
+[21:47:47.767] === Diagnostics initialized ===
+[21:47:47.939] 🔓 After assembly reload
+[21:47:47.940] 🔓 After assembly reload
+[21:55:33.195] 🟡 Compilation started
+[21:55:33.463] 🟢 Compilation finished
+[21:55:33.509] 🔒 Before assembly reload
+[21:55:34.831] === Diagnostics initialized ===
+[21:55:35.509] 🔓 After assembly reload
+[21:55:35.759] 🔒 Before assembly reload
+[21:55:35.761] 🔒 Before assembly reload
+[21:55:36.548] 🔒 Before assembly reload
+[21:55:36.565] === Diagnostics initialized ===
+[21:55:36.574] === Diagnostics initialized ===
+[21:55:36.741] 🔓 After assembly reload
+[21:55:36.752] 🔓 After assembly reload
+[21:55:37.598] === Diagnostics initialized ===
+[21:55:38.365] 🔓 After assembly reload
+[21:55:38.616] 🔒 Before assembly reload
+[21:55:38.617] 🔒 Before assembly reload
+[21:55:39.416] === Diagnostics initialized ===
+[21:55:39.424] === Diagnostics initialized ===
+[21:55:39.587] 🔓 After assembly reload
+[21:55:39.596] 🔓 After assembly reload
+[21:57:42.467] 🔒 Before assembly reload
+[21:57:43.490] === Diagnostics initialized ===
+[21:57:44.272] 🔓 After assembly reload
+[21:57:44.523] 🔒 Before assembly reload
+[21:57:44.541] 🔒 Before assembly reload
+[21:57:45.336] === Diagnostics initialized ===
+[21:57:45.349] === Diagnostics initialized ===
+[21:57:45.513] 🔓 After assembly reload
+[21:57:45.530] 🔓 After assembly reload
+[21:57:46.377] 🟡 Compilation started
+[21:57:46.681] 🟢 Compilation finished
+[21:57:46.712] 🔒 Before assembly reload
+[21:57:48.048] === Diagnostics initialized ===
+[21:57:48.737] 🔓 After assembly reload
+[21:57:48.985] 🔒 Before assembly reload
+[21:57:48.986] 🔒 Before assembly reload
+[21:57:49.678] 🔒 Before assembly reload
+[21:57:49.787] === Diagnostics initialized ===
+[21:57:49.797] === Diagnostics initialized ===
+[21:57:49.963] 🔓 After assembly reload
+[21:57:49.974] 🔓 After assembly reload
+[21:57:50.729] === Diagnostics initialized ===
+[21:57:51.513] 🔓 After assembly reload
+[21:57:51.761] 🔒 Before assembly reload
+[21:57:51.761] 🔒 Before assembly reload
+[21:57:52.574] === Diagnostics initialized ===
+[21:57:52.751] 🔓 After assembly reload
+[21:57:52.752] 🔓 After assembly reload
+[21:58:48.003] 🔒 Before assembly reload
+[21:58:49.159] === Diagnostics initialized ===
+[21:58:49.951] 🔓 After assembly reload
+[21:58:50.202] 🔒 Before assembly reload
+[21:58:50.202] 🔒 Before assembly reload
+[21:58:51.013] === Diagnostics initialized ===
+[21:58:51.041] === Diagnostics initialized ===
+[21:58:51.189] 🔓 After assembly reload
+[21:58:51.220] 🔓 After assembly reload
+[22:00:26.983] 🟡 Compilation started
+[22:00:28.297] 🟢 Compilation finished
+[22:00:28.343] 🔒 Before assembly reload
+[22:00:29.742] === Diagnostics initialized ===
+[22:00:30.455] 🔓 After assembly reload
+[22:00:30.699] 🔒 Before assembly reload
+[22:00:30.701] 🔒 Before assembly reload
+[22:00:31.510] === Diagnostics initialized ===
+[22:00:31.525] === Diagnostics initialized ===
+[22:00:31.682] 🔓 After assembly reload
+[22:00:31.721] 🔓 After assembly reload
+[22:07:25.206] 🟡 Compilation started
+[22:07:26.211] 🟢 Compilation finished
+[22:07:26.260] 🔒 Before assembly reload
+[22:07:27.593] === Diagnostics initialized ===
+[22:07:28.303] 🔓 After assembly reload
+[22:07:28.550] 🔒 Before assembly reload
+[22:07:28.550] 🔒 Before assembly reload
+[22:07:29.367] === Diagnostics initialized ===
+[22:07:29.371] === Diagnostics initialized ===
+[22:07:29.541] 🔓 After assembly reload
+[22:07:29.565] 🔓 After assembly reload
+[22:11:08.697] 🟡 Compilation started
+[22:11:09.779] 🟢 Compilation finished
+[22:11:09.826] 🔒 Before assembly reload
+[22:11:11.185] === Diagnostics initialized ===
+[22:11:11.885] 🔓 After assembly reload
+[22:11:12.133] 🔒 Before assembly reload
+[22:11:12.134] 🔒 Before assembly reload
+[22:11:12.945] === Diagnostics initialized ===
+[22:11:12.946] === Diagnostics initialized ===
+[22:11:13.117] 🔓 After assembly reload
+[22:11:13.121] 🔓 After assembly reload
+[22:12:33.342] 🟡 Compilation started
+[22:12:34.207] 🟡 Compilation started
+[22:12:35.278] 🟢 Compilation finished
+[22:12:35.315] 🔒 Before assembly reload
+[22:12:36.755] === Diagnostics initialized ===
+[22:12:37.430] 🔓 After assembly reload
+[22:12:37.715] 🔒 Before assembly reload
+[22:12:37.716] 🔒 Before assembly reload
+[22:12:38.528] === Diagnostics initialized ===
+[22:12:38.529] === Diagnostics initialized ===
+[22:12:38.703] 🔓 After assembly reload
+[22:12:38.708] 🔓 After assembly reload
+[22:12:41.464] 🟡 Compilation started
+[22:12:42.473] 🟢 Compilation finished
+[22:12:42.488] 🔒 Before assembly reload
+[22:12:43.891] === Diagnostics initialized ===
+[22:12:44.592] 🔓 After assembly reload
+[22:12:44.887] 🔒 Before assembly reload
+[22:12:44.889] 🔒 Before assembly reload
+[22:12:45.733] === Diagnostics initialized ===
+[22:12:45.734] === Diagnostics initialized ===
+[22:12:45.909] 🔓 After assembly reload
+[22:12:45.912] 🔓 After assembly reload
+[21:22:43.620] === Diagnostics initialized ===
+[21:22:44.244] 🔓 After assembly reload
+[21:23:09.707] 🔒 Before assembly reload
+[21:23:10.683] === Diagnostics initialized ===
+[21:23:11.427] 🔓 After assembly reload
+[21:27:22.228] 🟡 Compilation started
+[21:27:22.314] 🟢 Compilation finished
+[21:27:22.384] 🔒 Before assembly reload
+[21:27:23.700] === Diagnostics initialized ===
+[21:27:24.404] 🔓 After assembly reload
+[21:27:25.715] 🔒 Before assembly reload
+[21:27:26.727] === Diagnostics initialized ===
+[21:27:27.476] 🔓 After assembly reload
+[21:28:33.794] 🟡 Compilation started
+[21:28:34.038] 🟢 Compilation finished
+[21:28:34.084] 🔒 Before assembly reload
+[21:28:35.420] === Diagnostics initialized ===
+[21:28:36.089] 🔓 After assembly reload
+[21:28:48.356] 🔒 Before assembly reload
+[21:28:49.381] === Diagnostics initialized ===
+[21:28:50.129] 🔓 After assembly reload
+[21:29:20.242] 🔒 Before assembly reload
+[21:29:21.315] === Diagnostics initialized ===
+[21:29:22.064] 🔓 After assembly reload

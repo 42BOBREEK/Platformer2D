@@ -2,19 +2,30 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private Transform _player;
+    [SerializeField] private LayerMask _playerLayer;
     [SerializeField] private int _maximumDistance;
     [SerializeField] private EnemyMovement _enemyMovement;
 
+    private Transform _player;
     private float _distance;
 
     private void Update()
-    {
-        _distance = Vector2.Distance(transform.position, _player.position);
+    {   
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, _maximumDistance, _playerLayer);
 
-        if(_distance < _maximumDistance)
+        if(hit != null)
         {
-            _enemyMovement.ChasePlayer(_player);
+            _player = hit.transform;
+            _distance = Vector2.Distance(transform.position, _player.position);
+
+            if(_distance < _maximumDistance)
+            {
+                _enemyMovement.ChasePlayer(_player);
+            }
+            else 
+            {
+                _enemyMovement.Patrol();
+            }
         }
         else 
         {

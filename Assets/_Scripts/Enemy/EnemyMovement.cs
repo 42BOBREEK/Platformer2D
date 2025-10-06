@@ -5,7 +5,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private Transform[] _targets;
     [SerializeField] private int _targetIndex;
-    [SerializeField] private Transform _player;
     [SerializeField] private float _jumpingForce;
     [SerializeField] private GroundChecker _groundChecker;
 
