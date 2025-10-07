@@ -20,14 +20,9 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody.velocity = new Vector2(horizontalInput * _speed, _rigidbody.velocity.y);
     }
 
-    public void Jump(GroundChecker groundChecker)
+    public void Jump()
     {
-        if(groundChecker.IsGrounded())
-        {
-            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _jumpingForce);
-
-            _animator.SetJumpedTrigger();
-        }
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _jumpingForce);
     }
 
 }

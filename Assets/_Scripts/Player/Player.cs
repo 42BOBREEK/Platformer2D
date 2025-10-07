@@ -39,6 +39,10 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        _movement.Jump(_groundChecker);
+        if(_groundChecker.IsGrounded())
+        {
+            _movement.Jump();
+            _animator.SetJumpedTrigger();
+        }
     }
 }

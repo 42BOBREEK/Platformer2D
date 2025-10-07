@@ -7,31 +7,24 @@ public class PlayerHealth : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.TryGetComponent<Medkit>(out Medkit medkit) == true)
-        {
-            Heal(medkit.HealthToHeal);
-        }
-        else if(coll.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyHealth) == true)
+        if(coll.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyHealth) == true)
         {
             TakeDamage(enemyHealth.DealingDamage);
         }
     }
 
-    private void Update()
-    {
-        if(_health <=_minimumHealth)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void Heal(int healthToHeal)
+    public void Heal(int healthToHeal)
     {
         _health += healthToHeal;
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         _health -= damage;
+
+        if(_health <=_minimumHealth)
+        {
+            Destroy(gameObject);
+        }
     }
 }

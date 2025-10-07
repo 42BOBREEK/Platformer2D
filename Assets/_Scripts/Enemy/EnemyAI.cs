@@ -32,4 +32,5 @@ public class EnemyAI : MonoBehaviour
             _enemyMovement.Patrol();
         }
     }
+
 }
