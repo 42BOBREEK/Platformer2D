@@ -5,29 +5,27 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask _playerLayer;
     [SerializeField] private int _maximumDistance;
     [SerializeField] private EnemyMovement _enemyMovement;
+    [SerializeField] private int _maxHits;
 
     private Transform _player;
     private float _distance;
+    private Collider2D[] _hits; 
+
+    private void Start()
+    {
+        _hits = new Collider2D[_maxHits];
+    }
 
     private void Update()
-    {   
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, _maximumDistance, _playerLayer);
+    {
+        int hitsCount = Physics2D.OverlapCircleNonAlloc(transform.position, _maximumDistance, _hits, _playerLayer);
 
-        if(hit != null)
+        if (hitsCount > 0)
         {
-            _player = hit.transform;
-            _distance = Vector2.Distance(transform.position, _player.position);
-
-            if(_distance < _maximumDistance)
-            {
-                _enemyMovement.ChasePlayer(_player);
-            }
-            else 
-            {
-                _enemyMovement.Patrol();
-            }
+            _player = _hits[0].transform;
+            _enemyMovement.ChasePlayer(_player);
         }
-        else 
+        else
         {
             _enemyMovement.Patrol();
         }

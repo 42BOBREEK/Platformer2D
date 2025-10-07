@@ -5,17 +5,26 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int _health;
     [SerializeField] private int _minimumHealth;
     
-    private void OnCollisionEnter2D(Collision2D coll)
+    private ItemsCollector _collector;
+
+    private void Awake()
     {
-        if(coll.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyHealth) == true)
-        {
-            TakeDamage(enemyHealth.DealingDamage);
-        }
+        _collector = GetComponent<ItemsCollector>();
     }
 
-    public void Heal(int healthToHeal)
+    private void OnEnable()
     {
-        _health += healthToHeal;
+        _collector.FoundKit += HealByKit;
+    }
+
+    private void OnDisable()
+    {
+        _collector.FoundKit -= HealByKit;
+    }
+
+    public void HealByKit(Medkit kit)
+    {
+        _health += kit.HealthToHeal;
     }
 
     public void TakeDamage(int damage)
