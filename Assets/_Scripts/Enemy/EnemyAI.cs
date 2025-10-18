@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private LayerMask _playerLayer;
@@ -7,12 +8,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private EnemyMovement _enemyMovement;
     [SerializeField] private int _maxHits;
 
-    private Transform _player;
     private float _distance;
     private Collider2D[] _hits; 
+    private Health _health;
 
     private void Start()
     {
+        _health = GetComponent<Health>();
         _hits = new Collider2D[_maxHits];
     }
 
@@ -22,8 +24,7 @@ public class EnemyAI : MonoBehaviour
 
         if (hitsCount > 0)
         {
-            _player = _hits[0].transform;
-            _enemyMovement.ChasePlayer(_player);
+            _enemyMovement.ChasePlayer(_hits[0].transform);
         }
         else
         {
@@ -31,4 +32,8 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage)
+    {
+        _health.TakeDamage(damage);
+    }
 }

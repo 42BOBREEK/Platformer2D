@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class RawHealthBar : MonoBehaviour
 {
-    [SerializeField] private PlayerHealth _player;
+    [SerializeField] private Health _health;
 
     private Slider _slider;
 
@@ -14,7 +14,7 @@ public class RawHealthBar : MonoBehaviour
 
     private void Update()
     {
-        ChangeBarValue(_player.Health);
+        ChangeBarValue(_health.CurrentHealth);
     }
 
     private void ChangeBarValue(float value)

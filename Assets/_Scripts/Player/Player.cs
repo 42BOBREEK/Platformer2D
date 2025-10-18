@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _input;
@@ -8,9 +9,11 @@ public class Player : MonoBehaviour
     private PlayerAnimator _animator;
     private PlayerMovement _movement;
     private Rotater _rotater;
+    private Health _health;
 
     private void Awake()
     {
+        _health = GetComponent<Health>();
         _animator = GetComponent<PlayerAnimator>();
         _movement = GetComponent<PlayerMovement>();
         _rotater = GetComponent<Rotater>();
@@ -44,5 +47,10 @@ public class Player : MonoBehaviour
             _movement.Jump();
             _animator.SetJumpedTrigger();
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        _health.TakeDamage(damage);
     }
 }

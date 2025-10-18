@@ -6,7 +6,7 @@ public class PlayerAttacker : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemy))
+        if(coll.gameObject.TryGetComponent<EnemyAI>(out EnemyAI enemy))
         {
             enemy.TakeDamage(_dealingDamage);
         }
