@@ -16,23 +16,6 @@ public class Health : MonoBehaviour
         CurrentHealth = _maximumHealth;
     }
 
-    private void OnEnable()
-    {
-        _collector.FoundKit += HealByKit;
-    }
-
-    private void OnDisable()
-    {
-        _collector.FoundKit -= HealByKit;
-    }
-
-    public void HealByKit(Medkit kit)
-    {
-        CurrentHealth += kit.HealthToHeal;
-        if(CurrentHealth > _maximumHealth)
-            CurrentHealth = _maximumHealth;
-    }
-
     public void Heal(int health)
     {
         CurrentHealth += health;

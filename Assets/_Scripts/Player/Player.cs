@@ -10,10 +10,12 @@ public class Player : MonoBehaviour
     private PlayerMovement _movement;
     private Rotater _rotater;
     private Health _health;
+    private ItemsCollector _collector;
 
     private void Awake()
     {
         _health = GetComponent<Health>();
+        _collector = GetComponent<ItemsCollector>();
         _animator = GetComponent<PlayerAnimator>();
         _movement = GetComponent<PlayerMovement>();
         _rotater = GetComponent<Rotater>();
@@ -33,11 +35,18 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         _input.JumpClicked += Jump;
+        _collector.FoundKit += HealByKit;
     }
 
     private void OnDisable()
     {
         _input.JumpClicked -= Jump;
+        _collector.FoundKit -= HealByKit;
+    }
+
+    private void HealByKit(Medkit kit)
+    {
+        _health.Heal(kit.HealthToHeal);
     }
 
     private void Jump()
