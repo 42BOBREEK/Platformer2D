@@ -4689,8 +4689,8 @@ GameObject:
   - component: {fileID: 753356392}
   - component: {fileID: 753356393}
   - component: {fileID: 753356395}
-  - component: {fileID: 753356396}
   - component: {fileID: 753356397}
+  - component: {fileID: 753356398}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -4925,19 +4925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 144653223}
   _groundChecker: {fileID: 1800107973}
---- !u!114 &753356396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753356384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fbb27d68bf5426cab03b052a3bda93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dealingDamage: 50
 --- !u!114 &753356397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4950,8 +4937,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf370652dc3f667618f4c5e0d4a4e6b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minimumHealth: 0
-  _maximumHealth: 100
+  _minimum: 0
+  _maximum: 100
+--- !u!114 &753356398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753356384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb25923ca1ddb818c63608f30d3c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  _attackDamage: 50
 --- !u!4 &758221288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7381831992487865477, guid: fe3c442c5dbc04f6ba101fb18bdaa3a0, type: 3}

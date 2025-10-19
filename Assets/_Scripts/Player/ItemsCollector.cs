@@ -4,6 +4,7 @@ using System;
 public class ItemsCollector : MonoBehaviour
 {
     public event Action<Medkit> FoundKit;
+    public event Action FoundCoin;
 
     public int CoinsCollected { get; private set; }
     public Medkit Kit { get; private set; }
@@ -13,6 +14,7 @@ public class ItemsCollector : MonoBehaviour
         if(coll.gameObject.GetComponent<Coin>() != null)
         {
             CoinsCollected++;
+            FoundCoin?.Invoke();
             Destroy(coll.gameObject);
         }
         else if(coll.gameObject.TryGetComponent<Medkit>(out Medkit kit))

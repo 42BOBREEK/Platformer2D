@@ -20,7 +20,7 @@ public class SmoothHealthBar : MonoBehaviour
 
     private void Update()
     {
-        ChangeBarValue(_health.CurrentHealth);
+        ChangeBarValue(_health.Current);
 
         if(_target == null)
         {

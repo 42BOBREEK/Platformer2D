@@ -12,13 +12,27 @@ public class EnemyAI : MonoBehaviour
     private Collider2D[] _hits; 
     private Health _health;
 
-    private void Start()
+    private void Awake()
     {
         _health = GetComponent<Health>();
+    }
+
+    private void OnEnable()
+    {
+        _health.GotBelowMinimum += DestroySelf;
+    }
+
+    private void OnDisable()
+    {
+        _health.GotBelowMinimum -= DestroySelf;
+    }
+
+    private void Start()
+    {
         _hits = new Collider2D[_maxHits];
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         int hitsCount = Physics2D.OverlapCircleNonAlloc(transform.position, _maximumDistance, _hits, _playerLayer);
 
@@ -30,6 +44,11 @@ public class EnemyAI : MonoBehaviour
         {
             _enemyMovement.Patrol();
         }
+    }
+
+    private void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 
     public void TakeDamage(int damage)

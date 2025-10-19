@@ -12,6 +12,11 @@ public class Player : MonoBehaviour
     private Health _health;
     private ItemsCollector _collector;
 
+    public void TakeDamage(int damage)
+    {
+        _health.TakeDamage(damage);
+    }
+
     private void Awake()
     {
         _health = GetComponent<Health>();
@@ -35,13 +40,20 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         _input.JumpClicked += Jump;
+        _health.GotBelowMinimum += DestroySelf;
         _collector.FoundKit += HealByKit;
     }
 
     private void OnDisable()
     {
         _input.JumpClicked -= Jump;
+        _health.GotBelowMinimum += DestroySelf;
         _collector.FoundKit -= HealByKit;
+    }
+
+    private void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 
     private void HealByKit(Medkit kit)
@@ -56,10 +68,5 @@ public class Player : MonoBehaviour
             _movement.Jump();
             _animator.SetJumpedTrigger();
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        _health.TakeDamage(damage);
     }
 }

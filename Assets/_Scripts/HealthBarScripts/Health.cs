@@ -1,35 +1,39 @@
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int _minimumHealth;
-    [SerializeField] private int _maximumHealth;
+    [SerializeField] private int _minimum;
+    [SerializeField] private int _maximum;
 
     private ItemsCollector _collector;
 
-    public int CurrentHealth { get; private set; }
-    public int MaximumHealth => _maximumHealth;
+    public int Current { get; private set; }
+    public int Maximum => _maximum;
+
+    public event Action GotBelowMinimum;
 
     private void Awake()
     {
         _collector = GetComponent<ItemsCollector>();
-        CurrentHealth = _maximumHealth;
+        Current = _maximum;
     }
 
-    public void Heal(int health)
+    public void Heal(int healthToAdd)
     {
-        CurrentHealth += health;
-        if(CurrentHealth > _maximumHealth)
-            CurrentHealth = _maximumHealth;
+        Current += healthToAdd;
+
+        if(Current > _maximum)
+            Current = _maximum;
     }
 
     public void TakeDamage(int damage)
     {
-        CurrentHealth -= damage;
+        Current -= damage;
 
-        if(CurrentHealth <=_minimumHealth)
+        if(Current <=_minimum)
         {
-            Destroy(gameObject);
+            GotBelowMinimum?.Invoke();
         }
     }
 }
