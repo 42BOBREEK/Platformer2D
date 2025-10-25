@@ -8,8 +8,10 @@ public class Health : MonoBehaviour
 
     private ItemsCollector _collector;
 
-    public int Current { get; private set; }
+    public float Current ;
+
     public int Maximum => _maximum;
+    public float Minimum => _minimum;
 
     public event Action GotBelowMinimum;
 
@@ -19,7 +21,7 @@ public class Health : MonoBehaviour
         Current = _maximum;
     }
 
-    public void Heal(int healthToAdd)
+    public void Heal(float healthToAdd)
     {
         Current += healthToAdd;
 
@@ -27,7 +29,7 @@ public class Health : MonoBehaviour
             Current = _maximum;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         Current -= damage;
 

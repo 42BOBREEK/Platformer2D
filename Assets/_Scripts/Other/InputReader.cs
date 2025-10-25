@@ -7,9 +7,11 @@ public class InputReader : MonoBehaviour
     private const string Jump = "Jump";
 
     [SerializeField] private int _clickButtonNumber;
+    [SerializeField] private KeyCode _castKey;
 
     public float HorizontalInput { get; private set; }
     public event Action Clicked;
+    public event Action CastClicked;
     public event Action JumpClicked;
 
     private void Update()
@@ -24,6 +26,11 @@ public class InputReader : MonoBehaviour
         if (Input.GetButtonDown(Jump))
         {
             JumpClicked?.Invoke();
+        }
+
+        if(Input.GetKeyDown(_castKey))
+        {
+            CastClicked?.Invoke();
         }
     }
 }
